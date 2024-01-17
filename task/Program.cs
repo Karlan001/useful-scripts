@@ -12,7 +12,7 @@ void printArray(string[] arr) // Выводим массив на печать.
     Console.WriteLine();
 }
 
-int getLengthArr(string[] arr)
+string[] createArr(string[] arr)
 {
     int count = 0;
     for (int i = 0; i < arr.Length; i++)
@@ -22,25 +22,26 @@ int getLengthArr(string[] arr)
             count += 1;
         }
     }
-    return count;
-}
-
-string[] newArray(string[] arr)
-{
-    string[] newArray = new string[getLengthArr(arr)];
-    int count = 0;
-    for (int i = 0; i < arr.Length; i++)
-    {
-        if (arr[i].Length <= 3)
-        {
-            newArray[count] = arr[i];
-            count += 1;
-        }
-    }
+    string[] newArray = new string[count];
     return newArray;
 }
 
+string[] newArray(string[] arr, string[] newArr)
+{
+    int count = 0;
+    for (int i = 0; i < arr.Length; i++)
+    {
+        if (arr[i].Length <= 3)
+        {
+            newArr[count] = arr[i];
+            count += 1;
+        }
+    }
+    return newArr;
+}
+
 string[] array = {"Russia", "Denmark", "Kazan", "or", "and"};
-printArray(newArray(array));
+string[] newArr = createArr(array);
+printArray(newArray(array, newArr));
 
 
