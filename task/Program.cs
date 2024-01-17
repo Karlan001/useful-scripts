@@ -40,8 +40,6 @@ string[] newArray(string[] arr, string[] newArr)
     return newArr;
 }
 
-string[] array = {"Russia", "Denmark", "Kazan", "or", "and"};
+string[] array = {"Russia", "Denmark", "Kazan", "or", "and", "go"};
 string[] newArr = createArr(array);
 printArray(newArray(array, newArr));
-
-
