@@ -1,0 +1,18 @@
+{% extends "main/index.html" %}
+
+{% block title %}
+    Создание
+{% endblock %}
+{% block body %}
+    <div>
+        <a href="{% url "main:home_page" %}">Все рецепты</a>
+        </div>
+    <h1>Добавление рецепта</h1>
+    <div class="receipt_form">
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit"> Создать</button>
+        </form>
+    </div>
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends 'main/index.html' %}
+{% load static %}
+{% block title %}
+    Home page
+{% endblock %}
+{% block body %}
+    <div>
+        <a href="{% url "main:create_receipt" %}">Добавить новый рецепт</a>
+    </div>
+    {% for item in receipts %}
+            <ul>
+                <div class="border_block">
+                    <p class="bold_name" ><a href="{% url "main:receipt_details" pk=item.pk %}">
+                        Name: {{ item.name }}</a></p>
+                    <p>Description: {{ item.description }}</p>
+                </div>
+            </ul>
+    {% endfor %}
+{% endblock %}

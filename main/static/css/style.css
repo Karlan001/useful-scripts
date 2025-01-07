@@ -1,0 +1,25 @@
+body {
+    background: #d0d4a8a8;
+    font-size: large;
+    font-family: "Al Bayan";
+}
+
+img {
+    height: 450px;
+    width: 600px;
+}
+
+.border_block {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid black 2px;
+}
+
+.bold_name {
+    font-weight: bold;
+    font-size: larger;
+}

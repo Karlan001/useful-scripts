@@ -1,0 +1,33 @@
+{% extends "main/index.html" %}
+{% block title %}
+    Подробная информация
+{% endblock %}
+{% block body %}
+    <h1>Подробная информация о рецепте {{ receipts.name }}</h1>
+    <div><a href="{% url "main:update_receipt" pk=object.pk %}">Изменить рецепт</a></div>
+    <div><a href="{% url "main:home_page" %}">Все рецепты</a></div>
+    <div class="border_block">
+        <div>
+            Название рецепта: {{ receipts.name }}
+        </div>
+        <div>
+            Описание рецепта: {{ receipts.description }}
+        </div>
+        <div>
+            Шаги приготовления: {{ receipts.cooking_steps }}
+        </div>
+        <div>
+            Изображение рецепта: {% if receipts.image.url != ""  %}
+            <img src="{{ receipts.image.url }}" alt="">
+            {% else %}
+            Изображение отсутствует
+            {% endif %}
+        </div>
+        <div>
+            Автор рецепта: {{ receipts.author }}
+        </div>
+        <div>
+            Время приготовления: <time>{{ receipts.cooking_time }}</time>
+        </div>
+    </div>
+{% endblock %}
