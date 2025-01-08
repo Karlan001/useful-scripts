@@ -4,8 +4,15 @@
     Home page
 {% endblock %}
 {% block body %}
-    <div>
-        <a href="{% url "main:create_receipt" %}">Добавить новый рецепт</a>
+    <div class="menu">
+        <div class="user_info">{{ user }}
+            {% if user.is_authenticated %}
+            <a href="{% url "authentication:logout" %}">Выйти</a>
+        {% endif %}
+        </div>
+        <div class="new_receipt">
+            <a href="{% url "main:create_receipt" %}">Добавить новый рецепт</a>
+        </div>
     </div>
     {% for item in receipts %}
             <ul>

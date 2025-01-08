@@ -4,15 +4,19 @@
     Создание
 {% endblock %}
 {% block body %}
-    <div>
-        <a href="{% url "main:home_page" %}">Все рецепты</a>
+    {% if user.is_authenticated %}
+        <div>
+            <a href="{% url "main:home_page" %}">Все рецепты</a>
+            </div>
+        <h1>Добавление рецепта</h1>
+        <div class="receipt_form">
+            <form method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit"> Создать</button>
+            </form>
         </div>
-    <h1>Добавление рецепта</h1>
-    <div class="receipt_form">
-        <form method="post" enctype="multipart/form-data">
-            {% csrf_token %}
-            {{ form.as_p }}
-            <button type="submit"> Создать</button>
-        </form>
-    </div>
+    {% else %}
+        <h1>Для добавления рецепта необходимо <a href="{% url "authentication:login" %}">авторизоваться</a></h1>
+    {% endif %}
 {% endblock %}
