@@ -1,3 +1,4 @@
+from django.conf import settings
 from django.core.files.storage import FileSystemStorage
 from django.http import HttpRequest
 from django.shortcuts import render, reverse, redirect
@@ -35,12 +36,11 @@ class CreateReceiptView(CreateView):
     fields = "name", "description", "cooking_steps", "image", "author", "cooking_time"
     success_url = reverse_lazy("main:home_page")
 
-    def is_valid(self):
-        self.save()
+    def form_valid(self, form):
+        self.object = form.save(commit=False)
+        self.object.user_created_id = self.request.user.id
+        self.object.save()
         url = reverse("main:home_page")
-        image = self.cleaned_data['image']
-        fs = FileSystemStorage()
-        fs.save(image.name, image)
         return redirect(url)
 
 
@@ -61,7 +61,6 @@ class UpdateReceiptView(UpdateView):
         fs.save(image.name, image)
         return redirect(url)
 
-
 # def create_receipt(requests: HttpRequest):
 #     if requests.method == "POST":
 #         form = CreateReceiptForm(requests.POST, requests.FILES)
@@ -78,3 +77,4 @@ class UpdateReceiptView(UpdateView):
 #         "form": form,
 #     }
 #     return render(requests, "main/create-receipt.html", context=context)
+

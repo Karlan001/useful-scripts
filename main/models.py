@@ -1,3 +1,4 @@
+from django.contrib.auth.models import User
 from django.db import models
 
 
@@ -14,6 +15,7 @@ class Receipt(models.Model):
     cooking_time = models.TimeField(null=True)
     image = models.ImageField(upload_to='main/static/img/', null=True, blank=True)
     author = models.CharField(max_length=50, null=False)
+    user_created = models.ForeignKey(User, on_delete=models.CASCADE, blank=True)
 
     def __str__(self):
         return f"Рецепт {self.id} под названием {self.name}"
