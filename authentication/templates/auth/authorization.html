@@ -5,9 +5,17 @@
 {% endblock %}
 {% block body %}
     <h1>Авторизация</h1>
-    <form method="post">
-    {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Войти</button>
+    <div>
+        <form method="post">
+        {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Войти</button>
+        </form>
+    </div>
+    <div>
+    <h3>Если Вы еще не зарегистрированы, то необходимо зарегистрироваться</h3>
+    <form action="{% url "authentication:registration" %}">
+        <button>Зарегистрироваться</button>
     </form>
+    </div>
 {% endblock %}

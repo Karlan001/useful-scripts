@@ -9,12 +9,12 @@ class Person(models.Model):
 
 
 class Receipt(models.Model):
-    name = models.CharField(max_length=30)
-    description = models.TextField(blank=True)
-    cooking_steps = models.TextField()
-    cooking_time = models.TimeField(null=True)
-    image = models.ImageField(upload_to='main/static/img/', null=True, blank=True)
-    author = models.CharField(max_length=50, null=False)
+    name = models.CharField(max_length=30, verbose_name="Название")
+    description = models.TextField(blank=True, verbose_name="Описание")
+    cooking_steps = models.TextField(verbose_name="Шаги приготовления")
+    cooking_time = models.TimeField(null=True, verbose_name="Время приготовления")
+    image = models.ImageField(upload_to='main/static/img/', null=True, blank=True, verbose_name="Изображение")
+    author = models.CharField(max_length=50, null=False, verbose_name="Автор")
     user_created = models.ForeignKey(User, on_delete=models.CASCADE, blank=True)
 
     def __str__(self):

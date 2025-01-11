@@ -5,22 +5,18 @@
 {% endblock %}
 {% block body %}
     <div class="menu">
-        <div class="user_info">{{ user }}
-            {% if user.is_authenticated %}
-            <a href="{% url "authentication:logout" %}">Выйти</a>
-        {% endif %}
-        </div>
         <div class="new_receipt">
             <a href="{% url "main:create_receipt" %}">Добавить новый рецепт</a>
         </div>
     </div>
+    <h1 class="header">5 случайных рецептов</h1>
     {% for item in receipts %}
-            <ul>
-                <div class="border_block">
-                    <p class="bold_name" ><a href="{% url "main:receipt_details" pk=item.pk %}">
-                        Name: {{ item.name }}</a></p>
-                    <p>Description: {{ item.description }}</p>
-                </div>
-            </ul>
+        <ul>
+            <div class="border_block">
+                <p class="bold_name"><a href="{% url "main:receipt_details" pk=item.pk %}">
+                    Название: {{ item.name }}</a></p>
+                <p>Описание: {{ item.description }}</p>
+            </div>
+        </ul>
     {% endfor %}
 {% endblock %}

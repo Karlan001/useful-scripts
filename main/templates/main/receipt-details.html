@@ -4,8 +4,8 @@
 {% endblock %}
 {% block body %}
     <h1>Подробная информация о рецепте {{ receipts.name }}</h1>
-    <div><a href="{% url "main:update_receipt" pk=object.pk %}">Изменить рецепт</a></div>
     <div><a href="{% url "main:home_page" %}">Все рецепты</a></div>
+    <div><a href="{% url "main:update_receipt" pk=object.pk %}">Изменить рецепт</a></div>
     <div class="border_block">
         <div>
             Название рецепта: {{ receipts.name }}

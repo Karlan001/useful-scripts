@@ -1,0 +1,10 @@
+<nav>
+    <div class="user_info">
+        {% if user.is_authenticated %}
+                    <a href="{% url "main:profile" %}" class="btn">{{ user }}</a>
+                    <a href="{% url "authentication:logout" %}" class="btn">Выйти</a>
+                {% else %}
+                    <button><a href="{% url "authentication:login" %}">Авторизоваться</a></button>
+            {% endif %}
+    </div>
+</nav>
