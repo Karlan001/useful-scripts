@@ -1,4 +1,5 @@
 from django.conf import settings
+import logging
 from django.core.files.storage import FileSystemStorage
 from django.http import HttpRequest
 from django.shortcuts import render, reverse, redirect
@@ -7,8 +8,10 @@ from django.views.generic import ListView, CreateView, UpdateView
 from django.views.generic.detail import DetailView
 from .models import Receipt
 
-
 # Create your views here.
+
+logger = logging.getLogger(__name__)
+
 
 class HomePageView(ListView):
     template_name = "main/main.html"
@@ -60,4 +63,3 @@ class UpdateReceiptView(UpdateView):
         fs = FileSystemStorage()
         fs.save(image.name, image)
         return redirect(url)
-

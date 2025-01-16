@@ -1,0 +1,252 @@
+2025-01-16 18:38:30,621 INFO django.utils.autoreload: Watching for file changes with StatReloader
+2025-01-16 18:38:30,623 INFO main.views: Показываю главную страницу с рецептами <QuerySet [<Receipt: Рецепт 3 под названием Борщ>, <Receipt: Рецепт 1 под названием Жареная картошка>, <Receipt: Рецепт 4 под названием Котлеты>, <Receipt: Рецепт 6 под названием Рыба>, <Receipt: Рецепт 5 под названием Рис>]>
+2025-01-16 18:38:34,953 INFO root: Показ страницы пользователя
+2025-01-16 18:39:11,725 INFO root: Показ страницы пользователя
+2025-01-16 18:39:59,062 INFO django.utils.autoreload: /Users/ivanandreev/Documents/python итоговая контрольная/reciepts/main/views.py changed, reloading.
+2025-01-16 18:39:59,402 INFO django.utils.autoreload: Watching for file changes with StatReloader
+2025-01-16 18:39:59,405 INFO main.views: Показываю главную страницу с рецептами <QuerySet [<Receipt: Рецепт 2 под названием Оливье>, <Receipt: Рецепт 4 под названием Котлеты>, <Receipt: Рецепт 7 под названием Салат>, <Receipt: Рецепт 1 под названием Жареная картошка>, <Receipt: Рецепт 3 под названием Борщ>]>
+2025-01-16 18:43:24,579 INFO django.utils.autoreload: /Users/ivanandreev/Documents/python итоговая контрольная/reciepts/reciepts/settings.py changed, reloading.
+2025-01-16 18:43:24,888 INFO main.views: Показываю главную страницу с рецептами <QuerySet [<Receipt: Рецепт 3 под названием Борщ>, <Receipt: Рецепт 2 под названием Оливье>, <Receipt: Рецепт 6 под названием Рыба>, <Receipt: Рецепт 5 под названием Рис>, <Receipt: Рецепт 4 под названием Котлеты>]>
+2025-01-16 18:45:06,978 INFO main.views: Показываю главную страницу с рецептами <QuerySet [<Receipt: Рецепт 2 под названием Оливье>, <Receipt: Рецепт 3 под названием Борщ>, <Receipt: Рецепт 6 под названием Рыба>, <Receipt: Рецепт 1 под названием Жареная картошка>, <Receipt: Рецепт 5 под названием Рис>]>
+2025-01-16 18:45:26,609 INFO main.views: Показываю главную страницу с рецептами
+2025-01-16 18:47:47,796 INFO main.views: Показываю главную страницу с рецептами
+2025-01-16 18:48:19,752 INFO main.views: Показываю главную страницу с рецептами
+2025-01-16 18:49:28,190 INFO main.views: Показываю главную страницу с рецептами
+2025-01-16 18:49:28,190 INFO main.views: Отображение деталей заказа
+2025-01-16 18:58:29,909 INFO main.views: Показываю главную страницу с рецептами
+2025-01-16 18:58:29,910 INFO main.views: Отображение деталей заказа
+2025-01-16 19:01:46,467 INFO main.views: Показываю главную страницу с рецептами
+2025-01-16 19:01:46,468 INFO main.views: Отображение деталей заказа
+2025-01-16 19:02:41,844 INFO main.views: Показываю главную страницу с рецептами
+2025-01-16 19:02:41,845 INFO main.views: Отображение деталей заказа
+2025-01-16 19:02:48,224 INFO main.views: Показываю главную страницу с рецептами
+2025-01-16 19:02:48,224 INFO main.views: Отображение деталей заказа
+2025-01-16 19:04:20,526 INFO main.views: Показываю главную страницу с рецептами
+2025-01-16 19:04:20,526 INFO main.views: Отображение деталей заказа
+2025-01-16 19:08:50,068 INFO main.views: Показываю главную страницу с рецептами
+2025-01-16 19:08:50,068 INFO main.views: Отображение деталей заказа
+2025-01-16 19:09:33,198 INFO main.views: Показываю главную страницу с рецептами
+2025-01-16 19:09:33,198 INFO main.views: Отображение деталей заказа
+2025-01-16 19:14:45,932 INFO main.views: Показываю главную страницу с рецептами
+2025-01-16 19:14:45,932 INFO main.views: Отображение деталей заказа
+2025-01-16 19:15:40,133 INFO main.views: Показываю главную страницу с рецептами
+2025-01-16 19:15:40,133 INFO main.views: Отображение деталей заказа
+2025-01-16 19:16:35,408 INFO main.views: Показываю главную страницу с рецептами
+2025-01-16 19:16:35,408 INFO main.views: Отображение деталей заказа
+2025-01-16 19:18:22,856 INFO django.utils.autoreload: Watching for file changes with StatReloader
+2025-01-16 19:18:22,858 INFO main.views: Показываю главную страницу с рецептами
+2025-01-16 19:18:22,858 INFO main.views: Отображение деталей заказа
+2025-01-16 19:18:31,186 INFO root: Показ страницы пользователя
+2025-01-16 19:18:49,962 INFO root: Показ страницы пользователя
+2025-01-16 19:18:55,935 INFO root: Показ страницы пользователя
+2025-01-16 19:20:06,354 INFO root: Показ страницы пользователя
+2025-01-16 19:20:48,206 INFO django.utils.autoreload: /Users/ivanandreev/Documents/python итоговая контрольная/reciepts/reciepts/settings.py changed, reloading.
+2025-01-16 19:20:48,492 INFO django.utils.autoreload: Watching for file changes with StatReloader
+2025-01-16 19:20:48,494 INFO main.views: Показываю главную страницу с рецептами
+2025-01-16 19:20:48,494 INFO main.views: Отображение деталей заказа
+2025-01-16 19:20:54,015 INFO root: Показ страницы пользователя
+2025-01-16 19:21:12,012 INFO django.utils.autoreload: /Users/ivanandreev/Documents/python итоговая контрольная/reciepts/reciepts/settings.py changed, reloading.
+2025-01-16 19:21:12,274 INFO django.utils.autoreload: Watching for file changes with StatReloader
+2025-01-16 19:21:12,276 INFO main.views: Показываю главную страницу с рецептами
+2025-01-16 19:21:12,276 INFO main.views: Отображение деталей заказа
+2025-01-16 19:23:26,551 INFO django.utils.autoreload: /Users/ivanandreev/Documents/python итоговая контрольная/reciepts/main/views.py changed, reloading.
+2025-01-16 19:23:26,832 INFO django.utils.autoreload: Watching for file changes with StatReloader
+2025-01-16 19:23:26,834 INFO main.views: Показываю главную страницу с рецептами
+2025-01-16 19:23:42,367 ERROR django.request: Internal Server Error: /main/receipt_details/1
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+TypeError: DetailReceiptDetailsView.get() got an unexpected keyword argument 'pk'
+2025-01-16 19:24:05,556 INFO django.utils.autoreload: /Users/ivanandreev/Documents/python итоговая контрольная/reciepts/main/views.py changed, reloading.
+2025-01-16 19:24:05,830 INFO django.utils.autoreload: Watching for file changes with StatReloader
+2025-01-16 19:24:05,832 INFO main.views: Показываю главную страницу с рецептами
+2025-01-16 19:24:05,832 INFO main.views: Отображение деталей заказа
+2025-01-16 19:26:18,404 INFO django.utils.autoreload: /Users/ivanandreev/Documents/python итоговая контрольная/reciepts/reciepts/settings.py changed, reloading.
+2025-01-16 19:26:18,739 INFO django.utils.autoreload: Watching for file changes with StatReloader
+2025-01-16 19:26:18,743 INFO main.views: Показываю главную страницу с рецептами
+2025-01-16 19:26:18,743 INFO main.views: Отображение деталей заказа
+2025-01-16 19:26:24,948 INFO root: Показ страницы пользователя
+2025-01-16 19:26:56,567 INFO django.utils.autoreload: /Users/ivanandreev/Documents/python итоговая контрольная/reciepts/reciepts/settings.py changed, reloading.
+2025-01-16 19:26:56,835 INFO django.utils.autoreload: Watching for file changes with StatReloader
+2025-01-16 19:26:56,836 INFO main.views: Показываю главную страницу с рецептами
+2025-01-16 19:26:56,836 INFO main.views: Отображение деталей заказа
+2025-01-16 19:27:03,536 INFO root: Показ страницы пользователя
+2025-01-16 19:27:35,637 WARNING django.request: Not Found: /main/po
+2025-01-16 19:27:35,637 WARNING django.request: Not Found: /main/po
+2025-01-16 19:31:59,152 INFO django.utils.autoreload: /Users/ivanandreev/Documents/python итоговая контрольная/reciepts/main/views.py changed, reloading.
+2025-01-16 19:31:59,511 INFO django.utils.autoreload: Watching for file changes with StatReloader
+2025-01-16 19:31:59,514 INFO main.views: Показываю главную страницу с рецептами
+2025-01-16 19:32:00,864 ERROR django.request: Internal Server Error: /main/receipt_details/4
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+TypeError: DetailReceiptDetailsView.get() got an unexpected keyword argument 'pk'
+2025-01-16 19:32:00,864 ERROR django.request: Internal Server Error: /main/receipt_details/4
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+TypeError: DetailReceiptDetailsView.get() got an unexpected keyword argument 'pk'
+2025-01-16 19:32:12,884 INFO django.utils.autoreload: /Users/ivanandreev/Documents/python итоговая контрольная/reciepts/main/views.py changed, reloading.
+2025-01-16 19:32:13,174 INFO django.utils.autoreload: Watching for file changes with StatReloader
+2025-01-16 19:32:13,177 INFO main.views: Показываю главную страницу с рецептами
+2025-01-16 19:32:14,392 INFO main.views: Отображение деталей заказа
+2025-01-16 19:32:14,421 ERROR django.request: Internal Server Error: /main/receipt_details/4
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/ivanandreev/Documents/python итоговая контрольная/reciepts/main/views.py", line 40, in get
+    return render(request, self.template_name, self.context_object_name)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/backends/django.py", line 57, in render
+    context = make_context(
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/context.py", line 286, in make_context
+    raise TypeError(
+TypeError: context must be a dict rather than str.
+2025-01-16 19:32:14,421 ERROR django.request: Internal Server Error: /main/receipt_details/4
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/ivanandreev/Documents/python итоговая контрольная/reciepts/main/views.py", line 40, in get
+    return render(request, self.template_name, self.context_object_name)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/backends/django.py", line 57, in render
+    context = make_context(
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/context.py", line 286, in make_context
+    raise TypeError(
+TypeError: context must be a dict rather than str.
+2025-01-16 19:33:46,643 INFO django.utils.autoreload: /Users/ivanandreev/Documents/python итоговая контрольная/reciepts/main/views.py changed, reloading.
+2025-01-16 19:33:46,923 INFO django.utils.autoreload: Watching for file changes with StatReloader
+2025-01-16 19:33:46,925 INFO main.views: Показываю главную страницу с рецептами
+2025-01-16 19:33:46,925 INFO main.views: Отображение деталей заказа
+2025-01-16 19:36:54,815 INFO django.utils.autoreload: /Users/ivanandreev/Documents/python итоговая контрольная/reciepts/reciepts/settings.py changed, reloading.
+2025-01-16 19:36:55,065 INFO django.utils.autoreload: Watching for file changes with StatReloader
+2025-01-16 19:36:55,066 INFO main.views: Показываю главную страницу с рецептами
+2025-01-16 19:36:55,066 INFO main.views: Отображение деталей заказа
+2025-01-16 19:37:02,268 INFO root: Показ страницы пользователя
+2025-01-16 19:37:12,563 INFO root: Показ страницы пользователя
+2025-01-16 19:37:13,668 INFO root: Показ страницы пользователя
+2025-01-16 19:37:14,081 INFO root: Показ страницы пользователя
+2025-01-16 19:37:14,528 INFO root: Показ страницы пользователя
+2025-01-16 19:37:14,929 INFO root: Показ страницы пользователя
+2025-01-16 19:37:15,329 INFO root: Показ страницы пользователя
+2025-01-16 19:40:46,711 INFO django.utils.autoreload: /Users/ivanandreev/Documents/python итоговая контрольная/reciepts/reciepts/settings.py changed, reloading.
+2025-01-16 19:41:09,927 INFO django.utils.autoreload: Watching for file changes with StatReloader
+2025-01-16 19:41:09,927 INFO django.utils.autoreload: Watching for file changes with StatReloader
+2025-01-16 19:41:09,930 INFO main.views: Показываю главную страницу с рецептами
+2025-01-16 19:41:09,931 INFO main.views: Отображение деталей заказа
+2025-01-16 19:41:14,652 INFO root: Показ страницы пользователя
+2025-01-16 19:41:14,670 INFO django.server: "GET /main/profile/ HTTP/1.1" 200 4030
+2025-01-16 19:41:14,670 INFO django.server: "GET /main/profile/ HTTP/1.1" 200 4030
+2025-01-16 19:41:15,674 INFO django.server: "GET /main/receipt_details/1 HTTP/1.1" 200 1573
+2025-01-16 19:41:15,674 INFO django.server: "GET /main/receipt_details/1 HTTP/1.1" 200 1573
+2025-01-16 19:41:16,663 INFO root: Показ страницы пользователя
+2025-01-16 19:41:16,678 INFO django.server: "GET /main/profile/ HTTP/1.1" 200 4030
+2025-01-16 19:41:16,678 INFO django.server: "GET /main/profile/ HTTP/1.1" 200 4030
+2025-01-16 19:41:17,853 INFO django.server: "GET /main/ HTTP/1.1" 200 2281
+2025-01-16 19:41:17,853 INFO django.server: "GET /main/ HTTP/1.1" 200 2281
+2025-01-16 19:42:08,948 INFO django.utils.autoreload: /Users/ivanandreev/Documents/python итоговая контрольная/reciepts/main/views.py changed, reloading.
+2025-01-16 19:42:08,948 INFO django.utils.autoreload: /Users/ivanandreev/Documents/python итоговая контрольная/reciepts/main/views.py changed, reloading.
+2025-01-16 19:42:09,224 INFO django.utils.autoreload: Watching for file changes with StatReloader
+2025-01-16 19:42:09,224 INFO django.utils.autoreload: Watching for file changes with StatReloader
+2025-01-16 19:42:16,356 INFO django.utils.autoreload: /Users/ivanandreev/Documents/python итоговая контрольная/reciepts/main/views.py changed, reloading.
+2025-01-16 19:42:16,356 INFO django.utils.autoreload: /Users/ivanandreev/Documents/python итоговая контрольная/reciepts/main/views.py changed, reloading.
+2025-01-16 19:42:16,539 INFO django.utils.autoreload: Watching for file changes with StatReloader
+2025-01-16 19:42:16,539 INFO django.utils.autoreload: Watching for file changes with StatReloader
+2025-01-16 19:42:16,542 INFO main.views: Отображение деталей заказа
+2025-01-16 19:42:22,142 INFO django.server: "GET /main/ HTTP/1.1" 200 2231
+2025-01-16 19:42:22,142 INFO django.server: "GET /main/ HTTP/1.1" 200 2231
+2025-01-16 19:42:22,644 INFO django.server: "GET /main/ HTTP/1.1" 200 2276
+2025-01-16 19:42:22,644 INFO django.server: "GET /main/ HTTP/1.1" 200 2276
+2025-01-16 19:42:43,079 INFO django.utils.autoreload: /Users/ivanandreev/Documents/python итоговая контрольная/reciepts/main/views.py changed, reloading.
+2025-01-16 19:42:43,079 INFO django.utils.autoreload: /Users/ivanandreev/Documents/python итоговая контрольная/reciepts/main/views.py changed, reloading.
+2025-01-16 19:42:43,349 INFO django.utils.autoreload: Watching for file changes with StatReloader
+2025-01-16 19:42:43,349 INFO django.utils.autoreload: Watching for file changes with StatReloader
+2025-01-16 19:42:43,352 INFO main.views: Отображение деталей заказа
+2025-01-16 19:42:47,636 INFO django.server: "GET /main/ HTTP/1.1" 200 2293
+2025-01-16 19:42:47,636 INFO django.server: "GET /main/ HTTP/1.1" 200 2293
+2025-01-16 19:42:47,751 INFO django.server: "GET /main/ HTTP/1.1" 200 2276
+2025-01-16 19:42:47,751 INFO django.server: "GET /main/ HTTP/1.1" 200 2276
+2025-01-16 19:43:07,832 INFO django.utils.autoreload: /Users/ivanandreev/Documents/python итоговая контрольная/reciepts/main/views.py changed, reloading.
+2025-01-16 19:43:07,832 INFO django.utils.autoreload: /Users/ivanandreev/Documents/python итоговая контрольная/reciepts/main/views.py changed, reloading.
+2025-01-16 19:43:08,129 INFO django.utils.autoreload: Watching for file changes with StatReloader
+2025-01-16 19:43:08,129 INFO django.utils.autoreload: Watching for file changes with StatReloader
+2025-01-16 19:43:08,132 INFO main.views: Отображение деталей заказа
+2025-01-16 19:45:42,515 INFO django.server: "GET /main/receipt_details/7 HTTP/1.1" 200 1615
+2025-01-16 19:45:42,515 INFO django.server: "GET /main/receipt_details/7 HTTP/1.1" 200 1615
+2025-01-16 19:45:42,574 INFO django.server: "GET /main/static/img/salat-iz-pomidorov-s-ogurcom-i-lukom_1613988871_7_max.jpg HTTP/1.1" 200 134508
+2025-01-16 19:45:42,574 INFO django.server: "GET /main/static/img/salat-iz-pomidorov-s-ogurcom-i-lukom_1613988871_7_max.jpg HTTP/1.1" 200 134508
+2025-01-16 19:45:45,443 WARNING django.request: Not Found: /main/receipt_details/8
+2025-01-16 19:45:45,443 WARNING django.request: Not Found: /main/receipt_details/8
+2025-01-16 19:45:45,443 WARNING django.request: Not Found: /main/receipt_details/8
+2025-01-16 19:45:45,444 WARNING django.server: "GET /main/receipt_details/8 HTTP/1.1" 404 2922
+2025-01-16 19:45:45,444 WARNING django.server: "GET /main/receipt_details/8 HTTP/1.1" 404 2922
+2025-01-16 19:46:40,650 INFO django.utils.autoreload: /Users/ivanandreev/Documents/python итоговая контрольная/reciepts/main/views.py changed, reloading.
+2025-01-16 19:46:40,650 INFO django.utils.autoreload: /Users/ivanandreev/Documents/python итоговая контрольная/reciepts/main/views.py changed, reloading.
+2025-01-16 19:46:40,972 INFO django.utils.autoreload: Watching for file changes with StatReloader
+2025-01-16 19:46:40,972 INFO django.utils.autoreload: Watching for file changes with StatReloader
+2025-01-16 19:47:03,391 INFO django.utils.autoreload: /Users/ivanandreev/Documents/python итоговая контрольная/reciepts/reciepts/settings.py changed, reloading.
+2025-01-16 19:47:03,391 INFO django.utils.autoreload: /Users/ivanandreev/Documents/python итоговая контрольная/reciepts/reciepts/settings.py changed, reloading.
+2025-01-16 19:47:03,686 INFO django.utils.autoreload: Watching for file changes with StatReloader
+2025-01-16 19:47:06,460 WARNING django.request: Not Found: /main/receipt_details/8
+2025-01-16 19:47:06,460 WARNING django.request: Not Found: /main/receipt_details/8
+2025-01-16 19:47:06,460 WARNING django.server: "GET /main/receipt_details/8 HTTP/1.1" 404 2922
+2025-01-16 19:47:08,175 INFO django.server: "GET /main/ HTTP/1.1" 200 2213
+2025-01-16 19:47:09,203 INFO django.server: "GET /main/profile/ HTTP/1.1" 200 4030
+2025-01-16 19:47:10,410 INFO django.server: "GET /main/receipt_details/1 HTTP/1.1" 200 1573
+2025-01-16 19:47:12,165 INFO django.server: "GET /authentication/logout/ HTTP/1.1" 302 0
+2025-01-16 19:47:12,174 INFO django.server: "GET /main/ HTTP/1.1" 200 2198
+2025-01-16 19:47:13,055 INFO django.server: "GET /authentication/login/ HTTP/1.1" 200 1144
+2025-01-16 19:47:14,376 INFO django.server: "POST /authentication/login/ HTTP/1.1" 302 0
+2025-01-16 19:47:14,384 INFO django.server: "GET /main/ HTTP/1.1" 200 2276
+2025-01-16 20:00:08,242 INFO django.utils.autoreload: Watching for file changes with StatReloader
+2025-01-16 20:03:47,309 INFO django.utils.autoreload: Watching for file changes with StatReloader
+2025-01-16 20:03:56,612 INFO django.server: "GET /main/ HTTP/1.1" 200 2268
+2025-01-16 20:03:58,141 INFO django.server: "GET /main/profile/ HTTP/1.1" 200 4030
+2025-01-16 20:03:59,330 INFO django.server: "GET /main/receipt_details/1 HTTP/1.1" 200 1573
+2025-01-16 20:04:01,104 INFO django.server: "GET /main/update-receipt/1/update HTTP/1.1" 200 2247
+2025-01-16 20:04:22,346 INFO django.server: "POST /main/update-receipt/1/update HTTP/1.1" 302 0
+2025-01-16 20:04:22,359 INFO django.server: "GET /main/receipt_details/1 HTTP/1.1" 200 1600
+2025-01-16 20:04:25,146 INFO django.server: "GET /main/ HTTP/1.1" 200 2303
+2025-01-16 20:04:26,566 INFO django.server: "GET /authentication/logout/ HTTP/1.1" 302 0
+2025-01-16 20:04:26,574 INFO django.server: "GET /main/ HTTP/1.1" 200 2260
+2025-01-16 20:04:28,277 INFO django.server: "GET /authentication/login/ HTTP/1.1" 200 1144
+2025-01-16 20:04:30,463 INFO django.server: "GET /authentication/registration/? HTTP/1.1" 200 2087
+2025-01-16 20:04:32,176 INFO django.server: "GET /authentication/login/ HTTP/1.1" 200 1144
+2025-01-16 20:04:33,250 INFO django.server: "POST /authentication/login/ HTTP/1.1" 302 0
+2025-01-16 20:04:33,256 INFO django.server: "GET /main/ HTTP/1.1" 200 2303
