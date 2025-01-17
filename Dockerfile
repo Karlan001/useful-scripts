@@ -1,10 +1,14 @@
 FROM python:3.10
 
-WORKDIR /django-site/receipt
+ENV PYTHONUNBUFFERED=1
+
+WORKDIR /django-project/app
 
 COPY requirements.txt requirements.txt
 
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
-COPY reciepts .
+COPY . .
+
+CMD ["python", "manage.py", "runserver"]
