@@ -1,0 +1,14 @@
+{% extends "main/main.html" %}
+
+{% block title %}
+    Ошибка загрузки
+{% endblock %}
+{% block body %}
+    <div>
+        <a href="{% url "main:home_page" %}">Вернуться к рецептам</a>
+    </div>
+    <div>
+        <h1>Ошибка при загрузке изображения</h1>
+        <h3>Допустимый размер файла 1мб</h3>
+    </div>
+{% endblock %}
