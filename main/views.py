@@ -1,12 +1,17 @@
 from django.conf import settings
 import logging
+
+from django.core.exceptions import ValidationError
 from django.core.files.storage import FileSystemStorage
 from django.http import HttpRequest
 from django.shortcuts import render, reverse, redirect
+from django.template.defaultfilters import filesizeformat
 from django.urls import reverse_lazy
+from django.views import View
 from django.views.generic import ListView, CreateView, UpdateView
 from django.views.generic.detail import DetailView
 from .models import Receipt
+from reciepts.settings import MAX_UPLOAD_SIZE
 
 # Create your views here.
 
@@ -43,8 +48,18 @@ class CreateReceiptView(CreateView):
     def form_valid(self, form):
         self.object = form.save(commit=False)
         self.object.user_created_id = self.request.user.id
-        self.object.save()
         url = reverse("main:home_page")
+        image = form.cleaned_data['image']
+        fs = FileSystemStorage()
+        if image:
+            image_size = image.size
+            if image_size >= MAX_UPLOAD_SIZE:
+                return redirect("main:error")
+            else:
+                fs.save(image.name, image)
+                self.object.save()
+                return redirect(url)
+        self.object.save()
         return redirect(url)
 
 
@@ -52,14 +67,27 @@ class UpdateReceiptView(UpdateView):
     model = Receipt
     fields = "name", "description", "cooking_steps", "image", "author", "cooking_time"
     success_url = reverse_lazy("main:receipt_details")
+    template_name_suffix = "_update_form"
 
     def get_success_url(self):
         return reverse("main:receipt_details", kwargs={"pk": self.object.pk})
 
-    def is_valid(self):
-        self.save()
+    def form_valid(self, form):
+        self.object = form.save(commit=False)
         url = reverse("main:home_page")
-        image = self.cleaned_data['image']
+        image = form.cleaned_data['image']
         fs = FileSystemStorage()
-        fs.save(image.name, image)
+        if image:
+            image_size = image.size
+            if image_size < MAX_UPLOAD_SIZE:
+                fs.save(image.name, image)
+                print("Файл сохранен")
+                self.object.save()
+                return redirect(url)
+            else:
+                return redirect("main:error")
         return redirect(url)
+
+
+def error_view(requests: HttpRequest):
+    return render(requests, "main/exceptions-error.html")

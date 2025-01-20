@@ -1,5 +1,10 @@
 from django.urls import path, include
-from .views import HomePageView, UpdateReceiptView, DetailReceiptDetailsView, CreateReceiptView, ProfilePageView
+from .views import (HomePageView,
+                    UpdateReceiptView,
+                    DetailReceiptDetailsView,
+                    CreateReceiptView,
+                    ProfilePageView,
+                    error_view,)
 
 app_name = 'main'
 
@@ -9,5 +14,6 @@ urlpatterns = [
     path("receipt_details/<int:pk>", DetailReceiptDetailsView.as_view(), name="receipt_details"),
     path('create-receipt/', CreateReceiptView.as_view(), name="create_receipt"),
     path('update-receipt/<int:pk>/update', UpdateReceiptView.as_view(), name="update_receipt"),
+    path("error/", error_view, name="error")
 ]
 
