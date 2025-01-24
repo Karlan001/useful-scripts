@@ -8,14 +8,24 @@
         <div class="new_receipt">
             <a href="{% url "main:create_receipt" %}">Добавить новый рецепт</a>
         </div>
+        <div><h1 class="random-receipt">5 случайных рецептов</h1></div>
+        <div>{% include "main/user-info.html" %}</div>
     </div>
-    <h1 class="header">5 случайных рецептов</h1>
     {% for item in receipts %}
-        <ul>
-            <div class="border_block">
-                <p class="bold_name"><a href="{% url "main:receipt_details" pk=item.pk %}">
-                    Название: {{ item.name }}</a></p>
-                <p>Описание: {{ item.description }}</p>
+        <ul class="border_block">
+            <div class="brief_info">
+                <div class="brief_name_description">
+                    <p class="bold_name"><a href="{% url "main:receipt_details" pk=item.pk %}">
+                        {{ item.name }}</a></p>
+                    <p class="description">{{ item.description }}</p>
+                </div>
+                <div>
+                    {% if item.image %}
+                        <img src="{{ item.image.url }}" alt="{{ item.name }}" class="brief_image">
+                        {% else %}
+                        <p class="not_found">Изображение отсутствует</p>
+                    {% endif %}
+                </div>
             </div>
         </ul>
     {% endfor %}

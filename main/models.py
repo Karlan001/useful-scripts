@@ -14,7 +14,7 @@ class Receipt(models.Model):
     description = models.TextField(blank=True, verbose_name="Описание")
     cooking_steps = models.TextField(verbose_name="Шаги приготовления")
     cooking_time = models.TimeField(null=True, verbose_name="Время приготовления")
-    image = models.ImageField(upload_to='main/static/img/',
+    image = models.ImageField(upload_to='static/image_from_client',
                               null=True,
                               blank=True,
                               verbose_name="Изображение")
