@@ -7,12 +7,12 @@
     {% if user.is_authenticated %}
         </div>
         <div>
-            <a href="{% url "main:home_page" %}">Все рецепты</a>
+            <button class="button"><a href="{% url "main:home_page" %}">Все рецепты</a></button>
         </div>
         <div class="new_receipt">
-            <a href="{% url "main:create_receipt" %}">Добавить новый рецепт</a>
+            <button class="button"><a href="{% url "main:create_receipt" %}">Добавить новый рецепт</a></button>
         </div>
-        <h1 class="header">Мои рецепты</h1>
+        <h1 class="header detail-h1">Мои рецепты</h1>
         <div>
             {% for receipt in profile_receipt %}
                 <ul>
@@ -35,7 +35,7 @@
             {% endfor %}
         </div>
     {% else %}
-        <h1>Для просмотра своих рецептов необходимо <a href="{% url "authentication:login" %}">
-            авторизоваться</a></h1>
+        <h1>Для просмотра своих рецептов необходимо <button class="button"><a href="{% url "authentication:login" %}">
+            авторизоваться</a></button></h1>
     {% endif %}
 {% endblock %}
