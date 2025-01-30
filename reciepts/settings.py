@@ -122,6 +122,8 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, STATIC_URL),
 ]
 
+MEDIA_ROOT = os.path.join(BASE_DIR, "static/image_from_client")
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
@@ -166,3 +168,5 @@ LOGGING = {
 }
 
 MAX_UPLOAD_SIZE = 1_048_576  # Размер файла не более 1 мб (1024 * 1024)
+
+

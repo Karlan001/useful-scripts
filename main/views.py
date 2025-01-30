@@ -81,8 +81,8 @@ class UpdateReceiptView(UpdateView):
             image_size = image.size
             if image_size < MAX_UPLOAD_SIZE:
                 fs.save(image.name, image)
-                print("Файл сохранен")
                 self.object.save()
+                logger.info("Файл сохранен")
                 return redirect(url)
             else:
                 return redirect("main:error")
