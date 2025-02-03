@@ -11,8 +11,8 @@ services:
       - "0.0.0.0:8080"
     ports:
       - "8000:8080"
-networks:
-  default:
-    driver: bridge
-    driver_opts:
-      com.docker.network.driver.mtu: 1450
+#networks:
+#  default:
+#    driver: bridge
+#    driver_opts:
+#      com.docker.network.driver.mtu: 1450
