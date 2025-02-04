@@ -11,8 +11,6 @@ services:
       - "0.0.0.0:8080"
     ports:
       - "8000:8080"
-      - "80:80"
-      - "443:443"
     restart: "always"
     env_file:
       - ".env"
