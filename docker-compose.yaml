@@ -5,14 +5,16 @@ services:
     build:
       dockerfile: ./Dockerfile
     command:
-      - "python"
-      - "manage.py"
-      - "runserver"
+      - "gunicorn"
+      - "reciepts.wsgi:application"
+      - "--bind"
       - "0.0.0.0:8080"
     ports:
       - "8000:8080"
-#networks:
-#  default:
-#    driver: bridge
-#    driver_opts:
-#      com.docker.network.driver.mtu: 1450
+      - "80:80"
+      - "443:443"
+    restart: "always"
+    env_file:
+      - ".env"
+    volumes:
+      - "./reciepts/database:/app/database"
