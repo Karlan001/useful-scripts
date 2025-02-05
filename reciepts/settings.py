@@ -29,7 +29,7 @@ SECRET_KEY = getenv(
     'django-insecure-5_b6^(sz0^3pos=)jtyzxih39n_yyryed9*0szhb*demz6k(r#')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = getenv("DJANGO_DEBUG", "0") == "1"
+DEBUG = True#getenv("DJANGO_DEBUG", "1") == "0"
 
 ALLOWED_HOSTS = [
     "0.0.0.0",
@@ -128,9 +128,10 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, STATIC_URL),
 ]
+print(STATICFILES_DIRS)
 
-MEDIA_ROOT = os.path.join(BASE_DIR, "static/image_from_client")
-
+MEDIA_URL = "image_from_client/"
+MEDIA_ROOT = MEDIA_URL
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
