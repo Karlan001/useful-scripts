@@ -9,20 +9,25 @@ services:
       - "reciepts.wsgi:application"
       - "--bind"
       - "0.0.0.0:8080"
-    ports:
-      - "8000:8080"
-      - "80:8080
-      - "80:8080"
-      - "443:8080"
+    expose:
+      - "8000"
     restart: "always"
     env_file:
       - ".env"
     volumes:
       - "./reciepts/database:/app/database"
-      - "./reciepts/static:/app/staticfiles"
+      - "./image_from_client:/django-project/app/image_from_client"
+
   nginx:
     build: "./nginx"
+    volumes:
+      - "./static:/django-project/app/staticfiles"
+      - "./image_from_client:/django-project/app/image_from_client"
     ports:
-      - "8080"
+      - "80:80"
     depends_on:
       - "app"
+
+#volumes:
+#  static:
+#  image_from_client:
