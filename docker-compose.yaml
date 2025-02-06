@@ -1,4 +1,4 @@
-version: "3.9"
+#version: "3.9"
 
 services:
   app:
@@ -18,3 +18,10 @@ services:
       - ".env"
     volumes:
       - "./reciepts/database:/app/database"
+      - "./reciepts/static:/app/staticfiles"
+  nginx:
+    build: "./nginx"
+    ports:
+      - "8080"
+    depends_on:
+      - "app"
