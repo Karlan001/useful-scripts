@@ -11,4 +11,5 @@ RUN pip install -r requirements.txt
 
 COPY . .
 
+CMD ["pyhton", "manage.py", "collectstatic"]
 CMD ["gunicorn", "reciepts.wsgi:application", "--bind 0.0.0.0:8000"]

@@ -15,7 +15,6 @@ from os import getenv
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 
-
 BASE_DIR = Path(__file__).resolve().parent.parent
 DATABASE_DIR = BASE_DIR / "database"
 DATABASE_DIR.mkdir(exist_ok=True)
@@ -29,7 +28,11 @@ SECRET_KEY = getenv(
     'django-insecure-5_b6^(sz0^3pos=)jtyzxih39n_yyryed9*0szhb*demz6k(r#')
 
 # SECURITY WARNING: don't run with debug turned on in production!
+<<<<<<< HEAD
 DEBUG = getenv("DJANGO_DEBUG", "1") == "0"
+=======
+DEBUG = getenv("DJANGO_DEBUG", "0") == "0"
+>>>>>>> torture
 
 ALLOWED_HOSTS = [
     "0.0.0.0",
@@ -123,12 +126,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 STATIC_URL = 'static/'
-
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, STATIC_URL),
 ]
-print(STATICFILES_DIRS)
 
 MEDIA_URL = "image_from_client/"
 MEDIA_ROOT = MEDIA_URL
