@@ -23,9 +23,10 @@ services:
     volumes:
       - "./static:/django-project/app/staticfiles"
       - "./image_from_client:/django-project/app/image_from_client"
-      - "/etc/letsencrypt/live/pro-deserty.ru"
+      - "/etc/letsencrypt/live/pro-deserty.ru:/etc/letsencrypt/live/pro-deserty.ru"
     ports:
       - "80:80"
+      - "443:443"
     depends_on:
       - "app"
 
