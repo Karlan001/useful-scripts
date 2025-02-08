@@ -1,4 +1,4 @@
-<div>
+<div class="user_info">
     {% if user.is_authenticated %}
         <button class="button"><a href="{% url "main:profile" %}">{{ user }}</a></button>
         <button class="button"><a href="{% url "authentication:logout" %}">Выйти</a></button>

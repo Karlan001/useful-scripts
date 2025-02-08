@@ -37,9 +37,8 @@ a, a:visited, a:hover, a:active {
 
 .button {
     background: #9e7464;
+    margin: 7px;
 }
-
-
 
 .border_block {
     height: 100%;

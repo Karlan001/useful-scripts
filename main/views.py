@@ -21,7 +21,6 @@ logger = logging.getLogger(__name__)
 class HomePageView(ListView):
     template_name = "main/main.html"
     queryset = Receipt.objects.order_by("?")[:5]
-    # model = Receipt
     context_object_name = "receipts"
 
 
@@ -29,7 +28,7 @@ class ProfilePageView(ListView):
 
     def get(self, request: HttpRequest):
         context = {
-            "profile_receipt": Receipt.objects.filter(user_created_id=self.request.user.id).all()
+            "profile_receipt": Receipt.objects.filter(user_created_id=self.request.user.id).all().prefetch_related()
         }
         return render(request, "main/profile-receipts-list.html", context=context)
 
@@ -48,19 +47,18 @@ class CreateReceiptView(CreateView):
     def form_valid(self, form):
         self.object = form.save(commit=False)
         self.object.user_created_id = self.request.user.id
-        url = reverse("main:home_page")
         image = form.cleaned_data['image']
         fs = FileSystemStorage()
         if image:
             image_size = image.size
-            if image_size >= MAX_UPLOAD_SIZE:
+            if image_size > MAX_UPLOAD_SIZE:
                 return redirect("main:error")
             else:
                 fs.save(image.name, image)
                 self.object.save()
-                return redirect(url)
+                return redirect(self.success_url)
         self.object.save()
-        return redirect(url)
+        return redirect(self.success_url)
 
 
 class UpdateReceiptView(UpdateView):
@@ -73,20 +71,24 @@ class UpdateReceiptView(UpdateView):
         return reverse("main:receipt_details", kwargs={"pk": self.object.pk})
 
     def form_valid(self, form):
-        self.object = form.save(commit=False)
-        url = reverse("main:home_page")
-        image = form.cleaned_data['image']
-        fs = FileSystemStorage()
-        if image:
-            image_size = image.size
-            if image_size < MAX_UPLOAD_SIZE:
-                fs.save(image.name, image)
-                self.object.save()
-                logger.info("Файл сохранен")
-                return redirect(url)
-            else:
-                return redirect("main:error")
-        return redirect(url)
+        url_for_change = reverse("authentication:login")
+        if self.request.user.id == self.object.user_created_id:
+            self.object = form.save(commit=False)
+            # url = reverse("main:home_page")
+            image = form.cleaned_data['image']
+            fs = FileSystemStorage()
+            if image:
+                image_size = image.size
+                if image_size < MAX_UPLOAD_SIZE:
+                    fs.save(image.name, image)
+                    self.object.save()
+                    logger.info("Файл сохранен")
+                    return redirect(self.get_success_url())
+                else:
+                    return redirect("main:error")
+            return redirect(self.get_success_url())
+        else:
+            return render(self.request, "auth/authentication-for-change.html")
 
 
 def error_view(requests: HttpRequest):

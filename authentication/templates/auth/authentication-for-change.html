@@ -4,18 +4,14 @@
  Авторизация
 {% endblock %}
 {% block body %}
-    <h1>Авторизация</h1>
+    <h1>Изменение рецепта доступно только пользователю, который добавил данный рецепт</h1>
     <div>
-        <form method="post">
-        {% csrf_token %}
-            {{ form.as_p }}
-            <button type="submit" class="button">Войти</button>
-        </form>
+            <button class="button"><a href="{% url "authentication:login" %}">Авторизоваться</a></button>
     </div>
     <div>
     <h3>Если Вы еще не зарегистрированы, то необходимо зарегистрироваться</h3>
     <form action="{% url "authentication:registration" %}">
-        <button class="button">Зарегистрироваться</button>
+        <button>Зарегистрироваться</button>
     </form>
     </div>
 {% endblock %}

@@ -1,4 +1,8 @@
+from django.conf.urls.static import static
+from django.template.defaulttags import url
 from django.urls import path, include
+from django.views.generic import RedirectView
+
 from .views import (HomePageView,
                     UpdateReceiptView,
                     DetailReceiptDetailsView,
@@ -14,6 +18,6 @@ urlpatterns = [
     path("receipt_details/<int:pk>", DetailReceiptDetailsView.as_view(), name="receipt_details"),
     path('create-receipt/', CreateReceiptView.as_view(), name="create_receipt"),
     path('update-receipt/<int:pk>/update', UpdateReceiptView.as_view(), name="update_receipt"),
-    path("error/", error_view, name="error")
+    path("error/", error_view, name="error"),
 ]
 
