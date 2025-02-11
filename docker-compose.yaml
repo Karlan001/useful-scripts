@@ -21,7 +21,7 @@ services:
   nginx:
     build: "./nginx"
     volumes:
-      - "./static:/django-project/app/staticfiles"
+      - "./staticfiles:/django-project/app/staticfiles"
       - "./image_from_client:/django-project/app/image_from_client"
       - "/etc/letsencrypt/live/pro-deserty.ru/fullchain.pem:/etc/letsencrypt/live/pro-deserty.ru/fullchain.pem"
       - "/etc/letsencrypt/live/pro-deserty.ru/privkey.pem:/etc/letsencrypt/live/pro-deserty.ru/privkey.pem"

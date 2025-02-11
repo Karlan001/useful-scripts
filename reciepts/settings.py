@@ -36,6 +36,8 @@ ALLOWED_HOSTS = [
     "147.45.254.87",
 ] + getenv("DJANGO_ALLOWED_HOSTS", "").split(",")
 
+CSRF_TRUSTED_ORIGINS = ["https://pro-deserty.ru"]
+
 # Application definition
 
 INSTALLED_APPS = [
