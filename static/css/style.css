@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+* {
+    font-family: "Amatic SC", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+}
+
+body {
+    color: #bd8c7a;
+    background: #f1edeb;
+}
+
+div > .random-receipt {
+    font-size: 50px;
+}
+
+img {
+    height: 450px;
+    width: 600px;
+}
+
+p {
+    margin: 5px 5px 5px 0px;
+}
+
+a, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: #9e7465;
+
+}
+
+.button > a {
+    color: #f1edeb;
+}
+
+.button {
+    background: #9e7464;
+    margin: 7px;
+}
+
+.border_block {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 20px auto auto;
+    /*border: solid black 2px;*/
+}
+
+.brief_info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-self: flex-start;
+}
+
+.brief_image{
+    /*display: flex;*/
+    height: 400px;
+    width: 350px;
+    float: left;
+    margin-right: 50px;
+    border: #9e7465 solid 3px;
+
+    /*margin-right: 200px;*/
+}
+
+.brief_name_description {
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 450px;
+    float: right;
+    margin-left: 50px;
+}
+
+.detail-h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.not_found {
+    width: 350px;
+    margin-right: 50px;
+}
+
+.bold_name {
+    font-weight: bold;
+    font-size: larger;
+    text-align: center;
+}
+
+.description {
+    color: #bd8c7acc;
+    font-variant-position: normal;
+}
+
+.user_info {
+    color: #bd8c7a;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    text-align-all: center;
+    margin: 30px;
+    margin-bottom: 40px;
+}
+
+.detail-full-info {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 50px auto;
+    align-items: center;
+}
+
+.btn {
+    padding: 8px 15px;
+    background-color: white;
+    color: #bd8c7a;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 25px;
+}
+
+.detail-title {
+    color: #9e7465;
+    font-weight: bold;
+}
+
+.steps {
+    white-space: pre-wrap;
+}
+
+.img-detail {
+    display: flex;
+    height: 350px;
+    width: 350px;
+    border: #9e7465 solid 3px;
+}
+
+/*.new_receipt {*/
+/*    float: left;*/
+/*}*/
+
+.header {
+    color: #9e7465;
+}

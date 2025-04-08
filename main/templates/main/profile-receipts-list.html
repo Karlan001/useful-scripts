@@ -1,0 +1,41 @@
+{% extends "main/index.html" %}
+
+{% block title %}
+    Профиль
+{% endblock %}
+{% block body %}
+    {% if user.is_authenticated %}
+        </div>
+        <div>
+            <button class="button"><a href="{% url "main:home_page" %}">Все рецепты</a></button>
+        </div>
+        <div class="new_receipt">
+            <button class="button"><a href="{% url "main:create_receipt" %}">Добавить новый рецепт</a></button>
+        </div>
+        <h1 class="header detail-h1">Мои рецепты</h1>
+        <div>
+            {% for receipt in profile_receipt %}
+                <ul>
+                <div class="border_block">
+                    <p class="bold_name" ><a href="{% url "main:receipt_details" pk=receipt.pk %}">
+                        Название: {{ receipt.name }}</a></p>
+                    <p>Описание: {{ receipt.description }}</p>
+                    <p>Шаги приготовления: {{ receipt.cooking_steps }}</p>
+                    <p>Время приготовления: {{ receipt.cooking_time }}</p>
+                        Изображение рецепта: {% if receipt.image.url != ""  %}
+                        <img src="{{ receipt.image.url }}" alt="{{ receipt.name }}">
+                        {% else %}
+                        Изображение отсутствует
+                        {% endif %}
+                    <p>Автор: {{ receipt.author }}</p>
+                </div>
+                </ul>
+            {% empty %}
+                <h2>Вы еще написали ни одного рецепта</h2>
+            {% endfor %}
+        </div>
+    {% else %}
+        <h1>Для просмотра своих рецептов необходимо <button class="button"><a href="{% url "authentication:login" %}">
+            авторизоваться</a></button></h1>
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends "main/index.html" %}
+
+{% block title %}
+    Создание
+{% endblock %}
+{% block body %}
+    {% if user.is_authenticated %}
+        <div>
+            <button class="button"><a href="{% url "main:home_page" %}">Все рецепты</a></button>
+            </div>
+        <h1>Добавление рецепта</h1>
+        <div class="receipt_form">
+            <form method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" style="color: #f1edeb;" class="button">Создать</button>
+            </form>
+        </div>
+    {% else %}
+        <h1>Для добавления рецепта необходимо авторизоваться</h1>
+        <button class="button"><a href="{% url "authentication:login" %}">Авторизация</a></button>
+    {% endif %}
+{% endblock %}

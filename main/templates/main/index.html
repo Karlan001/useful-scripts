@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head %}
+    {% include "main/metrics.html" %}
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}
+        Title
+        {% endblock %}
+    </title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+    <link rel="icon" href="{% static 'img/favicon.ico' %}" type="image/x-icon" sizes="32">
+{% endblock %}
+</head>
+<body>
+    {% block body %}
+        {% include "main/metrics.html" %}
+    {% endblock %}
+</body>
+</html>
