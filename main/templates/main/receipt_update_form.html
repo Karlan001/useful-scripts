@@ -1,0 +1,21 @@
+{% extends "main/index.html" %}
+
+{% block title %}
+    Изменение
+{% endblock %}
+{% block body %}
+    <div>
+        <button class="button"><a href={% url "main:receipt_details" pk=object.pk %}>Вернутся к рецепту</a></button>
+    </div>
+    <div>
+        <button class="button"><a href="{% url "main:home_page" %}">Все рецепты</a></button>
+        </div>
+    <h1>Изменение рецепта</h1>
+    <div class="receipt_form">
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" style="color: #f1edeb" class="button">Изменить</button>
+        </form>
+    </div>
+{% endblock %}

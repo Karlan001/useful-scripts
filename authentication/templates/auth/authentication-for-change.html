@@ -1,0 +1,17 @@
+{% extends "auth/index.html" %}
+
+{% block title %}
+ Авторизация
+{% endblock %}
+{% block body %}
+    <h1>Изменение рецепта доступно только пользователю, который добавил данный рецепт</h1>
+    <div>
+            <button class="button"><a href="{% url "authentication:login" %}">Авторизоваться</a></button>
+    </div>
+    <div>
+    <h3>Если Вы еще не зарегистрированы, то необходимо зарегистрироваться</h3>
+    <form action="{% url "authentication:registration" %}">
+        <button>Зарегистрироваться</button>
+    </form>
+    </div>
+{% endblock %}

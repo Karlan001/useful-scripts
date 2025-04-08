@@ -1,0 +1,32 @@
+#version: "3.9"
+
+services:
+  app:
+    build:
+      dockerfile: ./Dockerfile
+    command:
+      - "gunicorn"
+      - "reciepts.wsgi:application"
+      - "--bind"
+      - "0.0.0.0:8080"
+    expose:
+      - "8000"
+    restart: "always"
+    env_file:
+      - ".env"
+    volumes:
+      - "./reciepts/database:/app/database"
+      - "./image_from_client:/django-project/app/image_from_client"
+
+  nginx:
+    build: "./nginx"
+    volumes:
+      - "./staticfiles:/django-project/app/staticfiles"
+      - "./image_from_client:/django-project/app/image_from_client"
+      - "/etc/letsencrypt/live/pro-deserty.ru/fullchain.pem:/etc/letsencrypt/live/pro-deserty.ru/fullchain.pem"
+      - "/etc/letsencrypt/live/pro-deserty.ru/privkey.pem:/etc/letsencrypt/live/pro-deserty.ru/privkey.pem"
+    ports:
+      - "80:80"
+      - "443:443"
+    depends_on:
+      - "app"
