@@ -3,3 +3,5 @@ for_upload/
 __pycache__/
 *.py[cod]
 *$py.class
+.gitignore
+.idea
