@@ -11,11 +11,11 @@ class Base(DeclarativeBase):
 class User(Base):
     __tablename__ = 'user'
     id: Mapped[int] = mapped_column(primary_key=True)
-    name:Mapped[str] = mapped_column(nullable=False)
-    email: Mapped[str] = mapped_column(nullable=False)
-    password: Mapped[str] = mapped_column(nullable=False)
-    is_admin: Mapped[bool] = mapped_column(default=False)
-    account: Mapped[List["Account"]] = relationship("Account", backref="user")
+    name:Mapped[str]
+    email: Mapped[str] = mapped_column(nullable=False, unique=True)
+    password: Mapped[str]
+    is_admin: Mapped[bool]
+    account: Mapped[List["Account"] | None] = relationship("Account", backref="user", lazy='noload')
 
 
 class Account(Base):
